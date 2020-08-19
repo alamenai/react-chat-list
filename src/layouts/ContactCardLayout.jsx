@@ -1,7 +1,7 @@
 import React from "react"
 
 const ContactCardLayout = (props) => {
-    return <div className="flex items-center align-bottom px-4 hover:bg-gray-50 py-2">
+    return <div className="flex items-center px-4 hover:bg-gray-50 py-2">
         {props.left}
         <div className="flex-1">
             {props.right}
