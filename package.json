@@ -1,5 +1,7 @@
 {
-    "name": "react-firebase-authentication",
+    "homepage": "http://menaiala.github.io/react-chat-list",
+
+    "name": "react-chat-list",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -27,7 +29,9 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "build:css": "tailwind build src/assets/css/tailwind.css -o src/assets/css/main.css",
-        "watch:css": "tailwind build --watch src/assets/css/tailwind.css -o src/assets/css/main.css"
+        "watch:css": "tailwind build --watch src/assets/css/tailwind.css -o src/assets/css/main.css",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
