@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'deploy'
+1 verbose cli ]
+2 info using npm@6.14.4
+3 info using node@v12.16.2
+4 verbose run-script [ 'predeploy', 'deploy', 'postdeploy' ]
+5 info lifecycle react-chat-list@0.1.0~predeploy: react-chat-list@0.1.0
+6 verbose lifecycle react-chat-list@0.1.0~predeploy: unsafe-perm in lifecycle true
+7 verbose lifecycle react-chat-list@0.1.0~predeploy: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\AlaEddine\Desktop\react-chat-list\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\AlaEddine\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\AlaEddine\AppData\Roaming\npm;C:\Users\AlaEddine\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\AlaEddine\AppData\Roaming\npm
+8 verbose lifecycle react-chat-list@0.1.0~predeploy: CWD: C:\Users\AlaEddine\Desktop\react-chat-list
+9 silly lifecycle react-chat-list@0.1.0~predeploy: Args: [ '/d /s /c', 'npm run build' ]
+10 silly lifecycle react-chat-list@0.1.0~predeploy: Returned: code: 0  signal: null
+11 info lifecycle react-chat-list@0.1.0~deploy: react-chat-list@0.1.0
+12 verbose lifecycle react-chat-list@0.1.0~deploy: unsafe-perm in lifecycle true
+13 verbose lifecycle react-chat-list@0.1.0~deploy: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\AlaEddine\Desktop\react-chat-list\node_modules\.bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\AlaEddine\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\AlaEddine\AppData\Roaming\npm;C:\Users\AlaEddine\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\AlaEddine\AppData\Roaming\npm
+14 verbose lifecycle react-chat-list@0.1.0~deploy: CWD: C:\Users\AlaEddine\Desktop\react-chat-list
+15 silly lifecycle react-chat-list@0.1.0~deploy: Args: [ '/d /s /c', 'gh-pages -d build' ]
+16 silly lifecycle react-chat-list@0.1.0~deploy: Returned: code: 1  signal: null
+17 info lifecycle react-chat-list@0.1.0~deploy: Failed to exec deploy script
+18 verbose stack Error: react-chat-list@0.1.0 deploy: `gh-pages -d build`
+18 verbose stack Exit status 1
+18 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\index.js:332:16)
+18 verbose stack     at EventEmitter.emit (events.js:310:20)
+18 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\lib\spawn.js:55:14)
+18 verbose stack     at ChildProcess.emit (events.js:310:20)
+18 verbose stack     at maybeClose (internal/child_process.js:1021:16)
+18 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:286:5)
+19 verbose pkgid react-chat-list@0.1.0
+20 verbose cwd C:\Users\AlaEddine\Desktop\react-chat-list
+21 verbose Windows_NT 6.3.9600
+22 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "deploy"
+23 verbose node v12.16.2
+24 verbose npm  v6.14.4
+25 error code ELIFECYCLE
+26 error errno 1
+27 error react-chat-list@0.1.0 deploy: `gh-pages -d build`
+27 error Exit status 1
+28 error Failed at the react-chat-list@0.1.0 deploy script.
+28 error This is probably not a problem with npm. There is likely additional logging output above.
+29 verbose exit [ 1, true ]
