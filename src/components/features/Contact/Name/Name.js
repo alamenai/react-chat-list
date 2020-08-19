@@ -1,6 +1,12 @@
-import React from "react"
+import React, { useContext } from "react"
 import Text from "../../../lib/Text"
+import { MessageContext } from "../Message"
 
-const Name = () => (<Text content="Jessica" classes="text-base font-sans font-medium text-gray-800" />)
+const Name = () => {
+    const context = useContext(MessageContext);
+    return (< Text
+        content={context.contactName}
+        classes="text-base font-sans font-medium text-gray-800" />)
+}
 
 export default Name
