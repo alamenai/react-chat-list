@@ -1,6 +1,9 @@
-import React from "react"
+import React, { useContext } from "react"
 import Avatar from "../../../lib/Avatar"
-import * as IMAGES_DATA from "../../../../constants/index"
-const ContactAvatar = () => (<Avatar src={IMAGES_DATA.img_1.url} alt={IMAGES_DATA.img_1.alt} />)
+import { MessageContext } from "../Message"
+const ContactAvatar = () => {
+    const { contactPhoto } = useContext(MessageContext);
+    return (<Avatar src={contactPhoto.url} alt={contactPhoto.alt} />)
+}
 
 export default ContactAvatar
