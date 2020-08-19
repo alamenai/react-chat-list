@@ -6,7 +6,7 @@ import { NotFound } from "../../../../constants"
 
 const ContactList = ({ messages }) => {
 
-    const mapContactToList = () => messages.map(message => renderContactCard(message))
+    const mapContactToList = () => messages.map((message, index) => renderContactCard(message, index))
 
     return (<div className="my-4">
         {messages.length === 0 ? renderNotFound() : mapContactToList()}
@@ -23,7 +23,7 @@ const renderNotFound = () => (
     </div>
 )
 
-const renderContactCard = (message) => {
+const renderContactCard = (message, index) => {
     const {
         contactName,
         markedAsRead,
@@ -39,7 +39,7 @@ const renderContactCard = (message) => {
         text,
         markedAsRead,
     }}>
-        <ContactCard />
+        <ContactCard key={index} />
     </MessageContext.Provider >)
 }
 
