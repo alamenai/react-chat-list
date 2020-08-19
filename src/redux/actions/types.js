@@ -1,1 +1,1 @@
-export const ADD_STEP = "ADD_STEP"
+export const CONTACT_FILTER = "CONTACT_FILTER"
