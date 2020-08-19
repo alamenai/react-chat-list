@@ -1,8 +1,8 @@
 import React from "react"
 
-const Sidebar = (props) => {
+const Sidebar = ({ children }) => {
     return <div className="py-4 bg-white w-1/4 h-screen">
-        {props.children}
+        {children}
     </div>
 }
 
