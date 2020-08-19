@@ -1,0 +1,1 @@
+export const CONTACT_FILTER = "CONTACT_FILTER"
