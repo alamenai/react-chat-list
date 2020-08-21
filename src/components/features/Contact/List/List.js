@@ -17,7 +17,7 @@ const mapStateToProps = (state) => ({ messages: state })
 
 const NotFound = () => (
     <div className="w-full h-64 flex flex-col items-center justify-center">
-        <img src={notFoundPath} width="60px" height="60px" />
+        <img src={notFoundPath} alt="Contact not found" width="60px" height="60px" />
         <p className="font-hairline mt-4 w-2/3 text-center">
             There's no contact with the name you provided</p>
     </div>
@@ -40,6 +40,7 @@ const ContactCard = (message, index) => {
         markedAsRead,
     }}>
         <Card key={index} />
+        <hr className="mx-4 opacity-50" />
     </MessageContext.Provider >)
 }
 
