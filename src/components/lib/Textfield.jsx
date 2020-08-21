@@ -11,12 +11,9 @@ const Textfield = ({ type, value, placeholder, event, classes }) => {
 }
 
 const TextfieldDefault = (props) => {
+    let mobileClasses = "xs:h-10 xs:py-1"
     let defaultClasses = "w-full bg-gray-50 outline-none h-12 font-helvetica text-base rounded-base tracking-wide px-4 py-2 focus:bg-gray-200"
-    return renderTextfield(props, defaultClasses)
-}
-const renderTextfield = (props, defaultClasses) => {
-    const { classes } = props
-    return <Textfield {...props} classes={defaultClasses + " " + classes} />
+    return <Textfield {...props} classes={defaultClasses + " " + mobileClasses + " " + props.classes} />
 }
 
 Textfield.propTypes = {
@@ -24,7 +21,6 @@ Textfield.propTypes = {
     value: PropTypes.string.isRequired,
     event: PropTypes.func.isRequired,
     classes: PropTypes.string
-
 }
 
 export default TextfieldDefault
