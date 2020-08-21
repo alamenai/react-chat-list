@@ -5,7 +5,7 @@ import { fitlerContactList } from "../../../../redux/actions/creators"
 
 const SearchContact = ({ fitlerContactList }) => {
 
-    const handleFilerContactList = (e) => {
+    const handleFilterContactList = (e) => {
         const contactName = e.target.value
         fitlerContactList(contactName);
     }
@@ -16,7 +16,7 @@ const SearchContact = ({ fitlerContactList }) => {
             value={null}
             placeholder="Search contact"
             classes="font-medium"
-            event={handleFilerContactList} />
+            event={handleFilterContactList} />
     </div>)
 }
 
