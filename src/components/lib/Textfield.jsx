@@ -11,7 +11,7 @@ const Textfield = ({ type, value, placeholder, event, classes }) => {
 }
 
 const TextfieldDefault = (props) => {
-    let mobileClasses = "xs:h-10 xs:py-1"
+    let mobileClasses = "xs:h-10 xs:text-sm sm:h-10 sm:text-sm md:h-10"
     let defaultClasses = "w-full bg-gray-50 outline-none h-12 font-helvetica text-base rounded-base tracking-wide px-4 py-2 focus:bg-gray-200"
     return <Textfield {...props} classes={defaultClasses + " " + mobileClasses + " " + props.classes} />
 }
